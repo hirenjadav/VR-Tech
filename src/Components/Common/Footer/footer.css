@@ -1,0 +1,42 @@
+footer {
+  width: 100%;
+}
+
+.footer-up {
+  background-color: #02376A;
+  padding: 50px 0;
+  color: rgba(255,255,255,0.7);;
+}
+
+.footer-up .nav-link:hover {
+  color: white;
+}
+
+.footer-up li {
+  list-style-type: none;
+}
+
+.footer-up ul {
+  padding: 0;
+}
+
+.footer-up h5 {
+  color: white;
+}
+
+.footer-up h5::before {
+  color: white;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  content: '';
+  height: 3px;
+  width: 34px;
+}
+
+.footer-down {
+  background-color: #012A52;
+  padding: 50px 0;
+  text-align: center;
+  color: white;
+}
