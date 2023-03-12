@@ -1,4 +1,5 @@
 footer {
+  margin-top: 50px;
   width: 100%;
 }
 
@@ -14,6 +15,10 @@ footer {
 
 .footer-up li {
   list-style-type: none;
+}
+
+.footer-up li::before {
+  content: none;
 }
 
 .footer-up ul {

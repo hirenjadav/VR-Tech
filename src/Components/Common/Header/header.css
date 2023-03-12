@@ -10,10 +10,20 @@
     justify-content: space-between;
 }
 
-.lower-header {
-    padding: 15px 0;
+.lower-header li::before {
+    content: none;
 }
 
 .lower-header-content .navbar {
     background-color: white !important;
+}
+
+.lower-header-content .nav-link.active {
+    color: #00529e;
+}
+
+a.nav-link.active::before {
+    position: absolute;
+    color: #00529e;
+    height: 4px;
 }

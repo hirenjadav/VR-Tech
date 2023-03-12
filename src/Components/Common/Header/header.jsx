@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./header.css";
 
 function Header(props) {
@@ -12,7 +13,7 @@ function Header(props) {
                 +91&nbsp;98985&nbsp;19815
               </a>
             </div>
-            <div className="col justify-content-end">
+            <div className="col d-flex justify-content-end">
               <a className="nav-link" href="mailto:vr.technocraft@yahoo.com">
                 vr.technocraft@yahoo.com
               </a>
@@ -23,12 +24,12 @@ function Header(props) {
       <div className="lower-header">
         <div className="container">
           <div className="lower-header-content">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-              <a class="navbar-brand" href="#">
-                Navbar
-              </a>
+            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+              <NavLink className="nav-link" to="/">
+                VR TECHNOCRAFT
+              </NavLink>
               <button
-                class="navbar-toggler"
+                className="navbar-toggler"
                 type="button"
                 data-toggle="collapse"
                 data-target="#navbarSupportedContent"
@@ -36,45 +37,58 @@ function Header(props) {
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <span class="navbar-toggler-icon"></span>
+                <span className="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#">
+              <div
+                className="collapse navbar-collapse justify-content-end"
+                id="navbarSupportedContent"
+              >
+                <ul className="navbar-nav mr-auto">
+                  <li className="nav-item">
+                    <NavLink className="nav-link" to="/">
                       HOME
-                    </a>
+                    </NavLink>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
+                  <li className="nav-item">
+                    <NavLink className="nav-link" to="/about">
                       ABOUT
-                    </a>
+                    </NavLink>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
+                  <li className="nav-item">
+                    <NavLink className="nav-link" to="/infrastructure">
                       INFRASTRUCTURE
-                    </a>
+                    </NavLink>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
-                      SERVICES
-                    </a>
+                  <li className="nav-item">
+                    <NavLink className="nav-link" to="/service">
+                      SERVICE
+                    </NavLink>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
+                  <li className="nav-item">
+                    <NavLink className="nav-link" to="/benifitsofoperation">
+                      BENEFITS OF OPERATION
+                    </NavLink>
+                  </li>
+                  <li className="nav-item">
+                    <NavLink className="nav-link" to="/cuttingprocess">
+                      CUTTING PROCESS
+                    </NavLink>
+                  </li>
+                  <li className="nav-item">
+                    <NavLink className="nav-link" to="/contact">
+                      CONTACT
+                    </NavLink>
+                  </li>
+                  {/* <li className="nav-item">
+                    <a className="nav-link" href="#">
                       WE CATER
                     </a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">
                       PROJECTS
                     </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
-                      CONTACT
-                    </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </nav>
