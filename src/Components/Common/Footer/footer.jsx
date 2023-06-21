@@ -1,5 +1,4 @@
 import {
-  faAngleRight,
   faEnvelope,
   faLocationDot,
   faPhone,
@@ -7,71 +6,47 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./footer.css";
+import GoogleMapReact from "google-map-react";
 
 function Footer(props) {
+  const defaultProps = {
+    center: {
+      lat: 10.99835602,
+      lng: 77.01502627,
+    },
+    zoom: 11,
+  };
+
   return (
     <footer>
       <div className="footer-up">
         <div className="container">
           <div className="row">
-            <div className="col">
-              <h5>Navigation</h5>
-              <ul>
-                <li>
-                  <a className="nav-link" href="/">
-                    <FontAwesomeIcon icon={faAngleRight} />
-                    &nbsp; Home
-                  </a>
-                </li>
-                <li>
-                  <a className="nav-link" href="/about">
-                    <FontAwesomeIcon icon={faAngleRight} />
-                    &nbsp; Company Profile
-                  </a>
-                </li>
-                <li>
-                  <a className="nav-link" href="/infrastructure">
-                    <FontAwesomeIcon icon={faAngleRight} />
-                    &nbsp; Infrastructure
-                  </a>
-                </li>
-                <li>
-                  <a className="nav-link" href="/contact">
-                    <FontAwesomeIcon icon={faAngleRight} />
-                    &nbsp; Contact
-                  </a>
-                </li>
-              </ul>
+            <div className="companyName col-12">
+              <h1>VR TECHNOCRAFT</h1>
             </div>
-            <div className="col">
-              <h5>Services</h5>
-              <ul>
-                <li>
-                  <a className="nav-link" href="/service">
-                    <FontAwesomeIcon icon={faAngleRight} />
-                    &nbsp; Abrasive Waterjet Cutting
-                  </a>
-                </li>
-                <li>
-                  <a className="nav-link" href="/service">
-                    <FontAwesomeIcon icon={faAngleRight} />
-                    &nbsp; Pure Waterjet Cutting
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="col">
-              <h5>Reach Us</h5>
-              <div className="footer-address">
-                <div className="row">
-                  <div className="col-1">
+            <div className="mb-3 col-lg-5 col-lg-5 col-sm-12">
+              <div className="address">
+                <div className="row m-0">
+                  <div className="col-1 p-0">
                     <FontAwesomeIcon icon={faLocationDot} />
                   </div>
-                  <div className="col-11">
+                  <div className="col-11 p-0">
                     <p>
                       L&T Heavy Engineering (In house Facility) LEMF-5, Nuclear
                       West Shop, Hazira Surat.
                     </p>
+                  </div>
+                </div>
+
+                <div className="row m-0">
+                  <div className="col-1 p-0">
+                    <FontAwesomeIcon
+                      className="locationfa"
+                      icon={faLocationDot}
+                    />
+                  </div>
+                  <div className="col-11 p-0">
                     <p>
                       D-9/13, Hojiwala Industrial Area, Road No.2,
                       Sachin-Palsana Road, Surat, Gujarat-394230.
@@ -79,24 +54,24 @@ function Footer(props) {
                   </div>
                 </div>
               </div>
-              <div className="footer-number">
-                <div className="row">
-                  <div className="col-1">
+              <div className="contactNo">
+                <div className="row m-0">
+                  <div className="col-1 p-0">
                     <FontAwesomeIcon icon={faPhone} />
                   </div>
-                  <div className="col-11">
+                  <div className="col-11 p-0">
                     <a className="nav-link" href="tel:+919898519815">
                       +91&nbsp;98985&nbsp;19815
                     </a>
                   </div>
                 </div>
               </div>
-              <div className="footer-email">
-                <div className="row">
-                  <div className="col-1">
+              <div className="email">
+                <div className="row m-0">
+                  <div className="col-1 p-0">
                     <FontAwesomeIcon icon={faEnvelope} />
                   </div>
-                  <div className="col-11">
+                  <div className="col-11 p-0">
                     <a
                       className="nav-link"
                       href="mailto:vr.technocraft@yahoo.com"
@@ -107,12 +82,21 @@ function Footer(props) {
                 </div>
               </div>
             </div>
+            <div className="col-lg-7 col-lg-7 col-sm-12">
+              <div className="map-container">
+                <GoogleMapReact
+                  bootstrapURLKeys={{ key: "" }}
+                  defaultCenter={defaultProps.center}
+                  defaultZoom={defaultProps.zoom}
+                ></GoogleMapReact>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div className="footer-down">
         <div className="container">
-          <p>Copyright © 2019 Param Technocraft. All rights reserved.</p>
+          <p>Copyright © 2023 VR Technocraft. All rights reserved.</p>
         </div>
       </div>
     </footer>

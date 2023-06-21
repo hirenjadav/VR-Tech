@@ -1,21 +1,16 @@
 import React from "react";
+import "./service.css";
 
 function Service(props) {
   return (
     <React.Fragment>
-      <figure>
-        <img
-          src={require("../../assets/covers/service.jpg")}
-          alt="infrastructure-header"
-        ></img>
-      </figure>
       <div className="main-content">
+        <div className="content-title service-header">
+          <h1>
+            Waterjet Cutting Services by <span>VR TECHNOCRAFT</span>
+          </h1>
+        </div>
         <div className="container">
-          <div className="content-title">
-            <h1>
-              Waterjet Cutting Services by <span>VR TECHNOCRAFT</span>
-            </h1>
-          </div>
           <div className="service-section">
             <h3>ABRASIVE WATERJET CUTTING</h3>
             <div className="row align-items-center">

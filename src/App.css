@@ -16,18 +16,10 @@
 }
 
 .main-content .content-title h1 span {
-  color: #00529e;
+  color: #db6143;
 }
 
-.main-content .content-title h1::after {
-  position: absolute;
-  content: '';
-  top: 70px;
-  left: 43%;
-  height: 2px;
-  background-color: #00529e;
-  width: 14%;
-}
+
 
 .main-content .content-title {
   position: relative;
@@ -41,12 +33,12 @@ p {
 }
 
 li {
-  list-style-type: none;
+  list-style-type: square;
   font-size: 17px;
   line-height: 2;
 }
 
 li::before {
-  font: var(--fa-font-solid);
-  content: "\f1ea";
+  /* font: var(--fa-font-solid); */
+  /* content: "\f1ea"; */
 }

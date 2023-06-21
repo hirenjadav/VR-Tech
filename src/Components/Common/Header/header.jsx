@@ -1,3 +1,5 @@
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./header.css";
@@ -5,27 +7,29 @@ import "./header.css";
 function Header(props) {
   return (
     <React.Fragment>
-      <div className="uppper-header">
+      {/* <div className="uppper-header">
         <div className="container">
           <div className="row">
             <div className="col">
               <a className="nav-link" href="tel:+919898519815">
+                <FontAwesomeIcon icon={faPhone} /> &nbsp;
                 +91&nbsp;98985&nbsp;19815
               </a>
             </div>
             <div className="col d-flex justify-content-end">
               <a className="nav-link" href="mailto:vr.technocraft@yahoo.com">
+                <FontAwesomeIcon icon={faEnvelope} /> &nbsp;
                 vr.technocraft@yahoo.com
               </a>
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="lower-header">
         <div className="container">
           <div className="lower-header-content">
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
-              <NavLink className="nav-link" to="/">
+              <NavLink className="nav-link navbar-brand" to="/">
                 VR TECHNOCRAFT
               </NavLink>
               <button
@@ -43,7 +47,7 @@ function Header(props) {
                 className="collapse navbar-collapse justify-content-end"
                 id="navbarSupportedContent"
               >
-                <ul className="navbar-nav mr-auto">
+                <ul className="navbar-nav mr-auto nav-ul-li">
                   <li className="nav-item">
                     <NavLink className="nav-link" to="/">
                       HOME

@@ -61,7 +61,7 @@ function About(props) {
           </p>
           <div className="vision-mission about-sections">
             <div className="row">
-              <div className="col-6">
+              <div className="col-lg-6 col-sm-12">
                 <div className="row">
                   <div className="col-2 d-flex justify-content-center align-items-center icon">
                     <FontAwesomeIcon icon={faLightbulb} size="lg" />
@@ -76,7 +76,7 @@ function About(props) {
                   </div>
                 </div>
               </div>
-              <div className="col-6">
+              <div className="col-lg-6 col-sm-12">
                 <div className="row">
                   <div className="col-2 d-flex justify-content-center align-items-center icon">
                     <FontAwesomeIcon icon={faFlag} />
@@ -96,33 +96,43 @@ function About(props) {
           <div className="why-us about-sections">
             <h3 className="d-flex justify-content-center">Why Us?</h3>
             <div className="why-us-content">
-              <figure>
-                <img src={require("../../assets/why-us.jpg")} alt="why-us" />
-              </figure>
-              <ul>
-                <li>
-                  We have the 11 years of practical experience in CNC Water Jet
-                  Cutting business.
-                </li>
-                <li>
-                  We are expertise in any kind of critical work and maintenance
-                  work of machine.
-                </li>
-                <li>We believe in Excellent cutting quality work.</li>
-                <li>
-                  We have an experience work with Défense project, Heavy
-                  Engineering Project, Nuclear Power Plant Project.
-                </li>
-                <li>
-                  We realize that this situation is difficult in Water jet
-                  Cutting, but rest-assured we will find a solution for you any
-                  time.
-                </li>
-                <li>Customer benefit is appreciating for us.</li>
-                <li>
-                  We are always active for critical work in water jet cutting.
-                </li>
-              </ul>
+              <div className="row">
+                <div className="col-lg-6 col-sm-12 d-flex justify-content-center">
+                  <figure>
+                    <img
+                      src={require("../../assets/why-us.jpg")}
+                      alt="why-us"
+                    />
+                  </figure>
+                </div>
+                <div className="col-lg-6 col-sm-12">
+                  <ul>
+                    <li>
+                      We have the 11 years of practical experience in CNC Water
+                      Jet Cutting business.
+                    </li>
+                    <li>
+                      We are expertise in any kind of critical work and
+                      maintenance work of machine.
+                    </li>
+                    <li>We believe in Excellent cutting quality work.</li>
+                    <li>
+                      We have an experience work with Défense project, Heavy
+                      Engineering Project, Nuclear Power Plant Project.
+                    </li>
+                    <li>
+                      We realize that this situation is difficult in Water jet
+                      Cutting, but rest-assured we will find a solution for you
+                      any time.
+                    </li>
+                    <li>Customer benefit is appreciating for us.</li>
+                    <li>
+                      We are always active for critical work in water jet
+                      cutting.
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
           <div className="our-client about-sections">
@@ -143,16 +153,19 @@ function About(props) {
             </div>
           </div>
           <div className="technology about-sections">
-            <h3 className="d-flex justify-content-center">Technology</h3>
-            <p></p>
-            <h4>Waterjet VS. Other Technologies</h4>
-            <div className="row">
-              <div className="col-6">
+            <h1 className="d-flex justify-content-center">Technology</h1>
+            <br />
+            <br />
+            <h4 className="d-flex justify-content-center">
+              Waterjet VS. Other Technologies
+            </h4>
+            <div className="img-table">
+              <div className="">
                 <figure>
                   <img src={require("../../assets/chart.jpg")} alt="chart" />
                 </figure>
               </div>
-              <div className="col-6">
+              <div className="tech-table">
                 <table>
                   <thead>
                     <tr>

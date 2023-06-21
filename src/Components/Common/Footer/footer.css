@@ -4,9 +4,9 @@ footer {
 }
 
 .footer-up {
-  background-color: #02376A;
-  padding: 50px 0;
-  color: rgba(255,255,255,0.7);;
+  background-color: #323333;
+  padding: 5% 1% 2% 1%;
+  color: rgba(255,255,255,0.7);
 }
 
 .footer-up .nav-link:hover {
@@ -40,8 +40,23 @@ footer {
 }
 
 .footer-down {
-  background-color: #012A52;
-  padding: 50px 0;
+  background-color: black;
+  padding: 20px 0 5px;
   text-align: center;
   color: white;
+}
+
+.companyName{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%; 
+}
+.companyName>h1{
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+  
+}
+.map-container {
+  height: 400px;
+  width: 100%;
 }
